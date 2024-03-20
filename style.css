@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title styles */
+#Title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Shop face styles */
+.shopFace {
+    display: flex;
+    justify-content: center;
+}
+
+/* Items list styles */
+.items {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Shoe image styles */
+.items li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Shoe image hover effect */
+.items li img:hover {
+    transform: scale(1.05);
+}
+
+.abovePh {
+    width: 40%;
+    overflow: hidden;
+
+}
+
+.above-ph {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+#Title {
+    margin: 0;
+    color:darkgrey;
+    font-size: 1.2rem; 
+    text-align: left; 
+    flex: 1; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.brand-words {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-left: 20px; 
+}
+.brand-words span {
+    margin-right: 10px; 
+    color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.title-container {
+    border: 2px solid #333; 
+    padding: 10px;
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: black;
+}
+.title-with-brands {
+    display: flex;
+    align-items: center;
+}
+.shoeN{
+
+}
+
+.shoeP{
+    
+}
