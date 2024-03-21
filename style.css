@@ -4,100 +4,271 @@
     box-sizing: border-box;
 }
 
-/* Set body background and font styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
 }
 
-/* Container styles */
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Title styles */
-#Title {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-/* Shop face styles */
-.shopFace {
-    display: flex;
-    justify-content: center;
-}
-
-/* Items list styles */
-.items {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* Shoe image styles */
-.items li img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Shoe image hover effect */
-.items li img:hover {
-    transform: scale(1.05);
-}
-
-.abovePh {
-    width: 40%;
-    overflow: hidden;
-
-}
-
-.above-ph {
-    width: 60%;
-    height: auto;
-    display: block;
-}
-#Title {
-    margin: 0;
-    color:darkgrey;
-    font-size: 1.2rem; 
-    text-align: left; 
-    flex: 1; 
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.brand-words {
-    display: flex; 
-    flex-wrap: wrap; 
-    margin-left: 20px; 
-}
-.brand-words span {
-    margin-right: 10px; 
-    color: grey;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 .title-container {
-    border: 2px solid #333; 
+    border: 2px solid #333;
     padding: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     border-radius: 10px;
-    border-width: 2px;
-    background-color: black;
+    background-color:#24262b;
+    
 }
+
 .title-with-brands {
     display: flex;
     align-items: center;
-}
-.shoeN{
-
+    justify-content: space-between;
 }
 
-.shoeP{
+#Title {
+    margin: 0;
+    color:whitesmoke;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+.brand-words {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-words span {
+    margin-right: 10px;
+    color: whitesmoke;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+}
+
+.abovePh {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.above-ph {
+    width: 100%;
+    /* max-width: 600px; */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.shopFace {
+    display: flex;
+    justify-content: center;
+    background-color: #474e5d;
+    padding : 10px;
+}
+
+.items {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.items li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.items li img {
+    width: 320px;
+    height: 450px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.shoeN {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.shoeP {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.brand-words span:nth-child(1):hover {
+    color: yellow;
+}
+
+.brand-words span:nth-child(2):hover {
+    color: green;
+}
+
+.brand-words span:nth-child(3):hover {
+    color: red;
+}
+
+.brand-words span:nth-child(4):hover {
+    color: black;
+}
+.buy-button:hover {
+    background-color: #45a049;
+}
+#just{
+position: relative;
+top: 150px;
+left: -350px;
+font-size: 80px;
+font-family: Futura,Trebuchet MS,Arial,sans-serif;
+color:rgba(128, 0, 128, 0.993);
+z-index: 4;
+}
+.butJust{
+    
+    padding:10px 20px;
+    
+    font-size: x-large;
+    background-color: black;
+    color: darkorange;
+    border-radius: 8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
     
 }
+#buttonJ{
+    position: relative;
+    cursor: pointer;
+    top: 160px;
+    left: -350px;
+    z-index: 4;
+}
+#buttonC{
+margin: 10px;
+}
+.containerA {
+    margin: 10px;
+}
+.containerF{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+ justify-content: center;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  .rotate
+{
+    transform: rotate(40deg);
+    transition: transform 1s;
+  -webkit-transform: rotate(40deg);
+  -webkit-transition: -webkit-transform 1s;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+  }
+  .about-section h1 p {
+    color : #474e5d;
+  }
+  #meetText{
+    text-align:center;
+  }

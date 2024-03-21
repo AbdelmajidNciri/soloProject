@@ -5,59 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majid's Shoe Emporium</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="title-container">
             <div class="title-with-brands">
      <h1 id="Title"> Shoe Emporium: Step into Style with Us</h1>
-     <div class="brand-words">
-        <span>Nike</span>
-        <span>Adidas</span>
-        <span>Puma</span>
-        <span>New Balance</span>
-    </div>
-  </div>
-</div>
+        <div class="brand-words">
+            <span>Nike</span>
+            <span>Adidas</span>
+            <span>Puma</span>
+            <span>NewBalance</span>
+        </div>
+        </div>
+        </div>
      <div class="abovePh">
-        <img src="https://i.pinimg.com/564x/e7/d9/c5/e7d9c5c833546059809f85671794852e.jpg" alt="above photo" class="above-ph">
+        <p id="just">Just Do It </p>
+        <button class="butJust" id="buttonJ" onclick="scrollToShop()">Shop Now</button>
+        <img src="https://i.pinimg.com/564x/16/af/bf/16afbfe2dd440b7cfa914d2ee0e6aaa0.jpg" alt="above photo" class="above-ph" onmouseover="rotate('above-ph')" onmouseout="resetRotation('above-ph')">
     </div>
     <div class="shopFace">
         <ul class="items">
-            <li class="shoe1">
-                <img src="https://i.pinimg.com/564x/28/11/2f/28112f46e3350155a605a6bdfee45b37.jpg" alt="Aj1 mid">
+            <li class="shoenike" onclick="addTo()">
+                <img src="https://i.pinimg.com/564x/28/11/2f/28112f46e3350155a605a6bdfee45b37.jpg" alt="Aj1 mid"  onmouseover="rotate('shoenike')" onmouseout="resetRotation('shoenike')">
               <p class="shoeN">Air Jordan 1 mid Banned</p>
               <p class="shoeP">250$</p>
+              <button class="buy-button">Buy</button>
             </li>
-            <li class="shoe2">
-                <img src="https://i.pinimg.com/564x/65/e0/fb/65e0fb6018a21e30db1de6704feddea3.jpg" alt="max90">
-                <p class="shoeN">Air Max 90 frank rudy</p>
-                <p class="shoeP">158$</p>
-            </li>
-            <li class="shoe3">
-                <img src="https://i.pinimg.com/236x/e6/32/b7/e632b75298714391f215d67a01aa7f22.jpg" alt="stan">
-                <p class="shoeN">Stan Smith adidas</p>
-                <p class="shoeP">100$</p>
-            </li>
-            <li class="shoe4">
-                <img src="https://i.pinimg.com/564x/78/b3/94/78b3944405e2774969ff4d5c70c6efdb.jpg" alt="AjIV ">
+            <li class="shoenike" id="shoenike2" onclick="addTo()">
+                <img src="https://i.pinimg.com/564x/78/b3/94/78b3944405e2774969ff4d5c70c6efdb.jpg" alt="Aj T" onmouseover="rotate('shoenike')" onmouseout="resetRotation('shoenike')">
                 <p class="shoeN">Travis Scott x Air Jordan 6 British Khaki</p>
                 <p class="shoeP">390$</p>
+                <button class="buy-button">Buy</button>
             </li>
-            <li class="shoe5">
-                <img src="https://i.pinimg.com/564x/71/61/21/716121a8d577629521d60d5e19ed6f1a.jpg" alt="college">
-                <p class="shoeN">Kanye West x Bapesta Low 'College Dropout</p>
-                <p class="shoeP">7,500$</p>
+            <li class="shoeadidas" onclick="addTo()">
+                <img src="https://i.pinimg.com/236x/e6/32/b7/e632b75298714391f215d67a01aa7f22.jpg" alt="stan" onmouseover="rotate('shoeadidas')" onmouseout="resetRotation('shoeadidas')">
+                <p class="shoeN">Stan Smith adidas</p>
+                <p class="shoeP">100$</p>
+                <button class="buy-button">Buy</button>
             </li>
-            <li class="shoe6">
-                <img src="https://i.pinimg.com/564x/c1/f4/22/c1f422bcb27809089a65aa1679f56fbe.jpg" alt="8thSt">
+            <li class="shoeadidas" onclick="addTo()">
+                <img src="https://i.pinimg.com/564x/c1/f4/22/c1f422bcb27809089a65aa1679f56fbe.jpg" alt="8th " onmouseover="rotate('shoeadidas')" onmouseout="resetRotation('shoeadidas')">
                 <p class="shoeN">The 8th street samba adidas</p>
                 <p class="shoeP">220$</p>
+                <button class="buy-button">Buy</button>
+            </li>
+            <li class="shoenewbalance" onclick="addTo()">
+                <img src="https://i.pinimg.com/564x/9d/c8/0d/9dc80dc4363a569510be9add0655ed45.jpg" alt="atmos" onmouseover="rotate('shoenewbalance')" onmouseout="resetRotation('shoenewbalance')">
+                <p class="shoeN">New Balance x Atmos 850 Low-Top</p>
+                <p class="shoeP">280$</p>
+                <button class="buy-button">Buy</button>
+            </li>
+            <li class="shoenewbalance" onclick="addTo()">
+                <img src="https://i.pinimg.com/564x/ef/ab/de/efabdee31c3ba7d5ac1d530374b63b21.jpg" alt="8thSt" onmouseover="rotate('shoenewbalance')" onmouseout="resetRotation('shoenewbalance')">
+                <p class="shoeN">XC-72- New Balance</p>
+                <p class="shoeP">220$</p>
+                <button class="buy-button">Buy</button>
+            </li>
+            <li class="shoepuma" onclick="addTo()">
+                <img src="https://i.pinimg.com/564x/30/13/36/301336c8088a63c9414d1bd4a37275cb.jpg" alt="Delphin"  onmouseover="rotate('shoepuma')" onmouseout="resetRotation('shoepuma')">
+                <p class="shoeN">Puma Delphin Sneakers</p>
+                <p class="shoeP">100$</p>
+                <button class="buy-button">Buy</button>
+            </li>
+            <li class="shoepuma" onclick="addTo()">
+                <img src="https://i.pinimg.com/564x/02/1c/5a/021c5ae252f2798cf9de7f3e23fcdebd.jpg" alt="rebound" onmouseover="rotate('shoepuma')" onmouseout="resetRotation('shoepuma')">
+                <p class="shoeN">Puma Rebound Lay Up</p>
+                <p class="shoeP">80$</p>
+                <button class="buy-button">Buy</button>
             </li>
         </ul>
     </div>
 </div>
+<div class="about-section">
+    <h1>About Our Shoe Emporium</h1>
+    <p>Welcome to our Shoe Emporium! We are dedicated to providing you with the latest and trendiest footwear for all occasions.</p>
+    <p>Explore our wide selection of shoes, from sneakers to boots, and discover your perfect pair. Our website is designed to be responsive, ensuring a seamless browsing experience across all devices.</p>
 
+
+    <h2 id="meetText">Meet Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/image/ai-software-developer.jpg" alt="Majda" style="width:100%">
+                <div class="containerA">
+                    <h2>Abdelmajid Nciri</h2>
+                    <p class="title">Founder & CEO</p>
+                    <p>As the founder and CEO of our Shoe Emporium, I am passionate about delivering high-quality footwear to our customers. </p>
+                    <p>abdelmajidnc10@gmail.com</p>
+                    <p><button class="butJust" id="buttonC">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+    
+  </div>
+
+
+<footer class="footer">
+    <div class="containerF">
+     <div class="row">
+       <div class="footer-col">
+         <h4>company</h4>
+         <ul>
+           <li><a  onclick="scrollToDiv()">about us</a></li>
+           <li><a href="#" onclick="showAlert()" >our services</a></li>
+           <li><a href="#" onclick="showAlert()">privacy policy</a></li>
+           <li><a href="#" onclick="showAlert()">affiliate program</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>get help</h4>
+         <ul>
+           <li><a href="#" onclick="showAlert()">FAQ</a></li>
+           <li><a href="#" onclick="showAlert()">shipping</a></li>
+           <li><a href="#" onclick="showAlert()">returns</a></li>
+           <li><a href="#" onclick="showAlert()">order status</a></li>
+           <li><a href="#" onclick="showAlert()">payment options</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>online shop</h4>
+         <ul>
+           <li><a href="#">watch</a></li>
+           <li><a href="#">shoes</a></li>
+
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+           <a href="https://www.facebook.com/nike/"><i class="fab fa-facebook-f"></i></a>
+           <a href="https://twitter.com/newbalance"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.instagram.com/nike/"><i class="fab fa-instagram"></i></a>
+           <a href="https://twitter.com/nike"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </div>
+     </div>
+    </div>
+ </footer>
+  
 
 
 
